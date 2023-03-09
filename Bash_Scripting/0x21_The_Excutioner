@@ -1,0 +1,72 @@
+#!/bin/bash
+chmod +x *
+echo "Which question do you want to solve? Enter the number (e.g., 0 for Question 0):"
+read question_num
+case $question_num in
+    0)
+        bash 0x00_begin.sh
+        ;;
+    1)
+        bash 0x01_hidden.sh
+        ;;
+    2)
+        bash 0x02_previous.sh
+        ;;
+    3)
+        bash 0x03_alive.sh
+        ;;
+    4)
+        bash 0x04_who.sh
+        ;;
+    5)
+        bash 0x05_where_am_i.sh
+        ;;
+    6)
+        bash 0x06_explore.sh
+        ;;
+    7)
+        bash 0x07_count.sh
+        ;;
+    8)
+        bash 0x08_conditions.sh
+        ;;
+    9)
+        bash 0x09_show_me.sh
+        ;;
+    10)
+        bash 0x10_lets_chill.sh
+        ;;
+    11)
+        bash 0x11_do_f_exist.sh
+        ;;
+    12)
+        bash 0x12_i_am_the_num.sh
+        ;;
+    13)
+        bash 0x13_ip_second.sh
+        ;;
+    14)
+        bash 0x14_lets_chill.sh
+        ;;
+    15)
+        bash 0x15_alias.sh
+        ;;
+    16)
+        bash 0x16_no_white.sh
+        ;;
+    17)
+        bash 0x17_validate_user.sh
+        ;;
+    18)
+        bash 0x18_confirm.sh
+        ;;
+    19)
+        bash 0x19_whatis.sh
+        ;;
+    20)
+        bash 0x20_done.sh
+        ;;
+    *)
+        echo "Invalid question number"
+        ;;
+esac

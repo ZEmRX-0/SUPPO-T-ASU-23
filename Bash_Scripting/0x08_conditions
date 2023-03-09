@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(echo $PATH | tr ':' '\n' | wc -l) -eq 2 ]; then
+    echo "Requirement met"
+else
+    echo $(echo $PATH | tr ':' '\n' | wc -l) "dirs"
+fi

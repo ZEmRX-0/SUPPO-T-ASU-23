@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Current user: $(whoami)"
+echo "User ID: $(id -u)"
+echo "Group ID: $(id -g)"
+echo "Home directory: $HOME"
+echo "Default shell: $SHELL"

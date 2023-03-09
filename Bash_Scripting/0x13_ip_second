@@ -1,0 +1,6 @@
+#!/bin/bash
+
+var=192.168.0.123
+second_num=${var#*.}
+second_num=${second_num%%.*}
+echo $second_num

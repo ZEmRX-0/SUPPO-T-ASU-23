@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check if bastet is installed
+if ! command -v bastet &> /dev/null
+then
+    echo "Bastet is not currently installed. To install, run the following command:"
+    echo -e "sudo apt-get install bastet /n or /n by using snap sudo snap install bastet"
+    exit 1
+fi
+
+# Play bastet
+echo "Starting Bastet game..."
+bastet
+

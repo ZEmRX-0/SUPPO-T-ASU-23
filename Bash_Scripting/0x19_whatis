@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "The command 'cal' is used to display a calendar. By default, it displays the current month's calendar in the terminal."

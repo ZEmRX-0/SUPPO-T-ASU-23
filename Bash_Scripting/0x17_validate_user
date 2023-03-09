@@ -1,0 +1,14 @@
+#!/bin/bash
+
+while true; do
+  read -p "Enter your username: " username
+  read -s -p "Enter your password (8 characters or more): " password
+  echo ""
+
+  if [ "$username" = "Support" ] && [ ${#password} -ge 8 ]; then
+    echo "Valid login credentials. Welcome, $username."
+    break
+  else
+    echo "Invalid login credentials. Please try again."
+  fi
+done

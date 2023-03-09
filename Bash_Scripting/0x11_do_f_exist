@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while true; do
+    read -p "Enter the name of a file: " file
+    if [ -f "$file" ]; then
+        echo "File exists."
+        break
+    else
+        echo "File does not exist. Try again."
+    fi
+done
+
